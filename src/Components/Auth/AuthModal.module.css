@@ -1,0 +1,251 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+.modal {
+  z-index: 20;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  overflow: hidden;
+}
+
+  
+  .modalContent {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .passwordWrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .showPasswordBtn {
+    margin-left: 8px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #3a86ff;
+  }
+  
+  .actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .actions button {
+    font: inherit;
+    color: white;
+    background-color: #3a86ff;
+    border: 1px solid #3a86ff;
+    border-radius: 4px;
+    padding: 0.5rem 2.5rem;
+    cursor: pointer;
+  }
+  
+  .actions .toggle {
+    background-color: transparent;
+    color: #3a86ff;
+    cursor: pointer;
+  }
+  
+
+  .auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 40rem;
+    margin: 3rem auto;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .auth h1 {
+    margin-bottom: 2rem;
+  }
+  
+  .control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .auth .control label {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .control input {
+    width: 100%;
+    max-width: 25rem; 
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .control p{
+    color: red;
+    font-size: small;
+    padding: 0;
+    margin: 0;
+    float: left;
+  }
+  
+  .passwordWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 25rem; 
+    margin: 0 auto; 
+  }
+  
+  
+  .passwordWrapper input {
+    flex: 1;
+    padding-right: 3rem; 
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .showPasswordBtn {
+    position: absolute;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 0.9rem; 
+    z-index: 1; 
+  }
+  .showPasswordBtn:hover {
+    position: absolute;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    color: #ff2058;
+    cursor: pointer;
+    font-size: 0.9rem; 
+    z-index: 1; 
+  }
+  
+  .actions {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .actions button {
+    font: inherit;
+    border: 1px solid #007bff;
+    background: #007bff;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background: #fd3467;
+    border-color: #fa0e49;
+  }
+  
+  .toggle {
+    background: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font: inherit;
+    margin-top: 1rem;
+  }
+  .auth .actions .toggle {
+    background: none;
+    border: none;
+    color: #007bff;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .auth .actions .toggle:hover,
+  .auth .actions .toggle:active {
+    border-bottom: 1px solid #ff2058;
+    border-right: 1px solid #ff2058;
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 3px 4px;
+    background-color: white;
+    padding: 6px 2px 6px 2px;
+    color: #ff3369;
+  }
+  
+  
+  .loginWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .loginBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .loginModal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    z-index: 1001;
+  }
+  

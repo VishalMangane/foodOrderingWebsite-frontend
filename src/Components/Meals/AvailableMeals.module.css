@@ -1,0 +1,96 @@
+/* .meals {
+    max-width: 60rem;
+    width: 90%;
+    margin: 2rem auto;
+    animation: meals-appear 1s ease-out forwards;
+  }
+  
+  .meals ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @keyframes meals-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  .meals {
+    margin: 2rem auto;
+    max-width: 90rem;
+    padding: 1rem;
+  }
+  
+  .hotelSection {
+    margin-bottom: 2rem;
+  }
+  
+  .hotelSection h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hotelSection p {
+    margin-bottom: 1rem;
+  }
+  
+  .hotelSection ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .hotelSection ul li {
+    margin-bottom: 1rem;
+  }
+   */
+
+
+   .meals {
+    margin: 2rem auto;
+    max-width: 90rem;
+    padding: 1rem;
+  }
+  
+  .hotelSection {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .hotelHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .hotelHeader h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .hotelHeader p {
+    margin: 0;
+  }
+  
+  .dropdownButton {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .mealsList {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
