@@ -27,7 +27,7 @@ const LocationSearch = ({ onCitySelect }) => {
       if (value.length > 0 && !isCitySelected) {
         try {
           const response = await axios.get(
-            'http://localhost:9080/api/locations/cities-suggested',
+            'https://c574-205-254-163-115.ngrok-free.app/api/locations/cities-suggested',
             { params: { query: value } }
           );
           setSuggestions(response.data);
@@ -67,7 +67,7 @@ const LocationSearch = ({ onCitySelect }) => {
     
     try {
       const response = await axios.get(
-        `http://localhost:9080/api/locations/hotels/${cityName}`
+        `https://c574-205-254-163-115.ngrok-free.app/api/locations/hotels/${cityName}`
       );
       const hotels = response.data;
       console.log("Hotels fetched:", hotels); 

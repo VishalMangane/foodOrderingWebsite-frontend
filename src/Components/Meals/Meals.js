@@ -20,7 +20,7 @@ const Meals = () => {
       if (fetchedHotels) {
         setHotels(fetchedHotels);
       }else{
-        axios.get(`http://localhost:9080/api/locations/hotels/${cityName}`)
+        axios.get(`https://c574-205-254-163-115.ngrok-free.app/api/locations/hotels/${cityName}`)
         .then(response => {
           const hotelsWithMeals = response.data.map(hotel => ({
             ...hotel,

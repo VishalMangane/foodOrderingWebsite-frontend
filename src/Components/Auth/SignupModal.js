@@ -21,7 +21,7 @@ const SignupModal = ({ onClose ,onSwitchToLogin}) => {
     const enteredPassword = passwordInputRef.current.value;
 
     try {
-      const response = await fetch("http://localhost:9080/api/signup", {
+      const response = await fetch("https://c574-205-254-163-115.ngrok-free.app/api/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
